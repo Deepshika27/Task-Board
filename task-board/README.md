@@ -1,5 +1,5 @@
 Team Task Board
-A simple task board for creating, assigning, and tracking team tasks, built with FastAPI (backend), React + TypeScript (frontend), and local JSON files for persistence. No authentication, per the spec.
+A simple task board for creating, assigning, and tracking team tasks, built with FastAPI (backend), React + TypeScript (frontend), and local JSON files for persistence.
 
 task-board/
 ├── package.json        Root convenience script to run both servers at once
@@ -44,8 +44,6 @@ pytest tests/ -v
 Data Model
 Team Member: id, name, email Task: id, title, description, assignee_id, priority (Low/Medium/High), status (To Do/In Progress/Done), due_date, created_date
 
-Seed data lives in backend/data/members.json (5 members) and backend/data/tasks.json (10 tasks spread across all three statuses, including two overdue incomplete tasks for testing the overdue highlight). These files are also the live datastore — the API reads and writes them directly, so restarting the servers does not reset data. To reset to the original seed, restore the two files from version control.
-
 API
 Method	Path	Purpose
 GET	/api/members	List team members
@@ -83,10 +81,10 @@ Created date and due date shown on every card.
 Overdue badge on incomplete tasks whose due date has passed.
 Loading, empty ("no tasks match the current filters"), success (toast banner), and error (retry banner / inline form errors) states.
 Optional Enhancements Implemented
-✅ Overdue highlighting (badge + tinted card)
-✅ Title search
-✅ Drag-and-drop column movement
-✅ API tests for status transitions and other business rules (backend/tests/test_tasks.py, 17 tests)
+Overdue highlighting (badge + tinted card)
+Title search
+Drag-and-drop column movement
+API tests for status transitions and other business rules (backend/tests/test_tasks.py, 17 tests)
 Known Limitations
 Local JSON persistence with an in-process lock does not scale beyond a single backend process — intentional given the "local JSON" requirement.
-No authentication/authorization, per the spec — anyone with network access to the API can read/write all tasks.
+No authentication/authorization - anyone with network access to the API can read/write all tasks.
