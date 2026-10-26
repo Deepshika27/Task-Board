@@ -1,0 +1,14 @@
+{
+  "name": "team-task-board",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root dev scripts to run the Team Task Board backend and frontend together",
+  "scripts": {
+    "dev:backend": "\"backend\\.venv\\Scripts\\python.exe\" -m uvicorn app.main:app --reload --port 8000 --app-dir backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

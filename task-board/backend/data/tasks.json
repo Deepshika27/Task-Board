@@ -1,0 +1,102 @@
+[
+  {
+    "id": "task-1",
+    "title": "Set up CI pipeline",
+    "description": "Configure GitHub Actions to run lint and tests on every push.",
+    "assignee_id": "mem-1",
+    "priority": "High",
+    "status": "To Do",
+    "due_date": "2026-10-20",
+    "created_date": "2026-10-01"
+  },
+  {
+    "id": "task-2",
+    "title": "Design database schema",
+    "description": "Draft the entity-relationship diagram for the task board data model.",
+    "assignee_id": "mem-2",
+    "priority": "Medium",
+    "status": "In Progress",
+    "due_date": "2026-11-05",
+    "created_date": "2026-10-10"
+  },
+  {
+    "id": "task-3",
+    "title": "Write onboarding docs",
+    "description": "Document the setup steps for new engineers joining the project.",
+    "assignee_id": "mem-3",
+    "priority": "Low",
+    "status": "Done",
+    "due_date": "2026-11-15",
+    "created_date": "2026-10-12"
+  },
+  {
+    "id": "task-4",
+    "title": "Audit API error handling",
+    "description": "Review all endpoints for consistent error responses and status codes.",
+    "assignee_id": "mem-4",
+    "priority": "High",
+    "status": "To Do",
+    "due_date": "2026-10-25",
+    "created_date": "2026-10-05"
+  },
+  {
+    "id": "task-5",
+    "title": "Implement task filters",
+    "description": "Add assignee, priority, and status filters to the task list endpoint.",
+    "assignee_id": "mem-1",
+    "priority": "Medium",
+    "status": "In Progress",
+    "due_date": "2026-11-01",
+    "created_date": "2026-10-08"
+  },
+  {
+    "id": "task-6",
+    "title": "Build summary dashboard widget",
+    "description": "Create the UI component showing task counts grouped by status.",
+    "assignee_id": "mem-5",
+    "priority": "High",
+    "status": "In Progress",
+    "due_date": "2026-10-30",
+    "created_date": "2026-10-09"
+  },
+  {
+    "id": "task-8",
+    "title": "Fix login redirect bug",
+    "description": "Resolve the incorrect redirect after a successful sign-in.",
+    "assignee_id": "mem-3",
+    "priority": "High",
+    "status": "Done",
+    "due_date": "2026-10-15",
+    "created_date": "2026-09-28"
+  },
+  {
+    "id": "task-9",
+    "title": "Set up project repository",
+    "description": "Initialize the repository with base folder structure and README.",
+    "assignee_id": "mem-4",
+    "priority": "Medium",
+    "status": "In Progress",
+    "due_date": "2026-09-20",
+    "created_date": "2026-09-10"
+  },
+  {
+    "id": "task-10",
+    "title": "Draft sprint retrospective notes",
+    "description": "Summarize key takeaways from the previous sprint for the team.",
+    "assignee_id": "mem-5",
+    "priority": "Low",
+    "status": "Done",
+    "due_date": "2026-10-18",
+    "created_date": "2026-10-01"
+  },
+  {
+    "title": "Implement Document Upload Feature",
+    "description": "Develop the functionality to allow users to upload PDF documents and store them for retrieval in the RAG pipeline.",
+    "assignee_id": "mem-2",
+    "priority": "High",
+    "status": "To Do",
+    "due_date": "2026-11-15",
+    "created_date": "2026-10-26",
+    "id": "ccedcb51-17f2-472e-88f3-40524806e09d"
+  }
+]
